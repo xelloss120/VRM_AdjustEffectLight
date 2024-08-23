@@ -5,6 +5,8 @@ using VRM;
 
 public class VrmImport : MonoBehaviour
 {
+    [SerializeField] VrmEdit VrmEdit;
+
     public void OnClick()
     {
         Async();
@@ -21,5 +23,6 @@ public class VrmImport : MonoBehaviour
         var instance = await VrmUtility.LoadAsync(paths[0]);
         instance.EnableUpdateWhenOffscreen();
         instance.ShowMeshes();
+        VrmEdit.Instance = instance;
     }
 }

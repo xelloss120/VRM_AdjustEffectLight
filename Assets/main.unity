@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18154685, g: 0.22718762, b: 0.3074059, a: 1}
+  m_IndirectSpecularColor: {r: 0.18154666, g: 0.22718978, b: 0.30740848, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1661,13 +1661,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
+  m_LocalRotation: {x: -0.14644654, y: 0.8535535, z: -0.3535534, w: -0.35355324}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 225, z: 0}
 --- !u!1 &745072217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2458,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1095112058}
   - component: {fileID: 1095112057}
+  - component: {fileID: 1095112060}
+  - component: {fileID: 1095112059}
   m_Layer: 0
   m_Name: main
   m_TagString: Untagged
@@ -2477,6 +2479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a8964120bbb8b43bfca0b7b7c2fa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VrmEdit: {fileID: 1095112060}
 --- !u!4 &1095112058
 Transform:
   m_ObjectHideFlags: 0
@@ -2492,6 +2495,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095112059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095112056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c833e136a17f9a46a250adfbe16c21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VrmEdit: {fileID: 1095112060}
+--- !u!114 &1095112060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095112056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98dff04ee67ea63428b453f14a241b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Instance: {fileID: 0}
 --- !u!1 &1149954598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,7 +3598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1453190955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1095112059}
+        m_TargetAssemblyTypeName: VrmExport, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1453190955
 MonoBehaviour:
   m_ObjectHideFlags: 0
