@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a8964120bbb8b43bfca0b7b7c2fa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VrmEdit: {fileID: 1095112060}
+  EditVRM: {fileID: 1095112060}
 --- !u!4 &1095112058
 Transform:
   m_ObjectHideFlags: 0
@@ -2507,7 +2507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c833e136a17f9a46a250adfbe16c21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VrmEdit: {fileID: 1095112060}
+  EditVRM: {fileID: 1095112060}
 --- !u!114 &1095112060
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,9 +3,9 @@ using UnityEngine;
 using SFB;
 using VRM;
 
-public class VrmImport : MonoBehaviour
+public class ImportVRM : MonoBehaviour
 {
-    [SerializeField] VrmEdit VrmEdit;
+    [SerializeField] EditVRM EditVRM;
 
     public void OnClick()
     {
@@ -23,6 +23,6 @@ public class VrmImport : MonoBehaviour
         var instance = await VrmUtility.LoadAsync(paths[0]);
         instance.EnableUpdateWhenOffscreen();
         instance.ShowMeshes();
-        VrmEdit.Instance = instance;
+        EditVRM.Instance = instance;
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UniGLTF;
 
-public class VrmEdit : MonoBehaviour
+public class EditVRM : MonoBehaviour
 {
     public RuntimeGltfInstance Instance;
 }
