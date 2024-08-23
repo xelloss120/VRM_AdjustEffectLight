@@ -1,0 +1,2 @@
+# VRM_AdjustEffectLight
+VRMのLightColor Attenuationを調整するやつ
