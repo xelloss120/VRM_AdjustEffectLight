@@ -1,6 +1,6 @@
 ■これなに？
 
-VRMのLightColor Attenuationを調整するやつです。
+VRMの光源影響を調整するやつです。
 
 ■使い方
 
