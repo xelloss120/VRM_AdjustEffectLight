@@ -24,5 +24,6 @@ public class ImportVRM : MonoBehaviour
         instance.EnableUpdateWhenOffscreen();
         instance.ShowMeshes();
         EditVRM.Instance = instance;
+        EditVRM.Init();
     }
 }
